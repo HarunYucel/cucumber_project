@@ -14,7 +14,7 @@ public class N11 {
     @FindBy(id="searchData")
     public WebElement n11Search;
 
-    @FindBy(className="resultText ")
+    @FindBy(xpath="//div[@class='resultText ']" )
     public WebElement searchResults;
 
 

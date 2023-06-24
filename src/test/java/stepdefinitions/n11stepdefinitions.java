@@ -11,22 +11,22 @@ import utilities.Driver;
 public class n11stepdefinitions {
     N11 n11 = new N11();
 
-    @Given("n11 sayfasına gider")
-    public void n11_sayfasına_gider() {
-       Driver.getDriver().get(ConfigReader.getProperty("n11Url"));
-           }
-
-    @Given("arama sonuclarının {string} icerdiğini dogrular")
-    public void arama_sonuclarının_icerdiğini_dogrular(String dyson) {
-
-        String expected = dyson;
+    @Given("Goes to page n11")
+    public void goes_to_page_n11() {
+        Driver.getDriver().get(ConfigReader.getProperty("n11Url"));
+    }
+    @Then("Types {string} into the search engine and searches")
+    public void types_into_the_search_engine_and_searches(String products) {
+        n11.n11Search.sendKeys(products+Keys.ENTER);
+    }
+    @Then("Verifies that search results contain {string}")
+    public void verifies_that_search_results_contain(String products) {
+        String expected = products;
         String actual = n11.searchResults.getText();
-       Assert.assertEquals(expected,actual);
+        Assert.assertTrue(actual.contains(expected));
     }
 
 
-    @Then("aramaMotoruna {string} yazar ve aratir")
-    public void aramamotorunaYazarVeAratir(String dyson) {
-        n11.n11Search.sendKeys(dyson+Keys.ENTER);
-    }
+
+
 }
