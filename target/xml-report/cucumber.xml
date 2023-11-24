@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="51.924">
-    <testcase classname="Product search on e-commerce site" name="n11 functional tests" time="19.086">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="61.795">
+    <testcase classname="Product search on e-commerce site" name="n11 functional tests" time="27.386">
         <system-out><![CDATA[Given Goes to page n11......................................................passed
 Then Types "Dyson" into the search engine and searches......................passed
 And Verifies that search results contain "Dyson"............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product search on e-commerce site" name="n11 functional tests 2" time="16.802">
+    <testcase classname="Product search on e-commerce site" name="n11 functional tests 2" time="19.072">
         <system-out><![CDATA[Given Goes to page n11......................................................passed
 Then Types "Robot" into the search engine and searches......................passed
 And Verifies that search results contain "Robot"............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product search on e-commerce site" name="n11 functional tests 3" time="15.566">
+    <testcase classname="Product search on e-commerce site" name="n11 functional tests 3" time="14.865">
         <system-out><![CDATA[Given Goes to page n11......................................................passed
 Then Types "Arnica" into the search engine and searches.....................passed
 And Verifies that search results contain "Arnica"...........................passed

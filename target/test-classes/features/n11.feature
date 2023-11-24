@@ -1,7 +1,7 @@
 Feature: Product search on e-commerce site
 
 
-@hy
+  @hy
 Scenario Outline: n11 functional tests
 
 Given Goes to page n11
